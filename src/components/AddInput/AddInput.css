@@ -1,27 +1,36 @@
+.custom-select {
+  padding: 5px;
+  margin-right: 10px;
+}
+
 .input-container {
-    background-color: white;
-    margin-top: 2rem;
-    border-radius: 0.25rem;
-    padding: 1rem;
-    box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
-    display: flex;
-    justify-content: space-between;
+  background-color: white;
+  margin-top: 2rem;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 1rem rgba(0, 0, 0, 0.329);
+  display: flex;
+  justify-content: space-between;
 }
 
 .input {
-    border: none;
-    width: 90%
+  border: none;
+  width: 90%;
 }
 
 .input:focus {
-    outline: none;
+  outline: none;
 }
 
 .add-btn {
-    border: none;
-    padding: 0.3rem 2rem;
-    border-radius: 0.2rem;
-    background-color: rgb(53, 201, 157);
-    color: white;
-    font-weight: 900;
+  border: none;
+  padding: 0.3rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(53, 201, 157);
+  color: white;
+  font-weight: 900;
+}
+
+.add-btn:disabled {
+  background-color: rgb(133, 134, 134);
 }
