@@ -35,35 +35,14 @@ function AddInput({ setTasks, tasks }) {
 
   return (
     <div className="input-container">
-      <select
-        name="colors"
-        className="custom-select"
-        onChange={(e) => setColor(e.target.value)}
-      >
-        <option value="-">Selecione um quadro...</option>
-        <option value={taskListColorsEnum.RED}>Importante & Urgente</option>
-        <option value={taskListColorsEnum.GREEN}>
-          Importante & Não Urgente
-        </option>
-        <option value={taskListColorsEnum.ORANGE}>Delegar</option>
-        <option value={taskListColorsEnum.YELLOW}>Excluir</option>
-      </select>
+      {/* componente de selecao INICIO */}
+      {/* componente de selecao FIM */}
 
-      <input
-        className="input"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
-        placeholder="Adicionar uma nova tarefa"
-      />
+      {/* componente de insercao INICIO */}
+      {/* componente de insercao FIM */}
 
-      <button
-        className="add-btn"
-        onClick={addTask}
-        disabled={color === '-'}
-        name="btn-add"
-      >
-        +
-      </button>
+      {/* componente de botao INICIO */}
+      {/* componente de botao FIM */}
     </div>
   );
 }

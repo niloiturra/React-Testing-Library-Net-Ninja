@@ -5,8 +5,7 @@ function TaskListFooter({ numberOfIncompleteTasks }) {
   return (
     <div className="task-list-footer">
       <p>
-        {numberOfIncompleteTasks}{' '}
-        {numberOfIncompleteTasks === 1 ? 'tarefa' : 'tarefas'} restantes
+        {/* Lógica de exibição */}
       </p>
     </div>
   );
