@@ -8,6 +8,11 @@ function AddInput({ setTasks, tasks }) {
   const [color, setColor] = useState('-');
 
   const addTask = () => {
+    if (!tasks) {
+      setTask('');
+      return;
+    }
+
     if (!tasks[color]) {
       tasks[color] = [];
     }
@@ -51,8 +56,13 @@ function AddInput({ setTasks, tasks }) {
         placeholder="Adicionar uma nova tarefa"
       />
 
-      <button className="add-btn" onClick={addTask} disabled={color === '-'}>
-        Add
+      <button
+        className="add-btn"
+        onClick={addTask}
+        disabled={color === '-'}
+        name="btn-add"
+      >
+        +
       </button>
     </div>
   );

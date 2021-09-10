@@ -33,22 +33,18 @@ function TasksLists({ tasks, setTasks }) {
     <div className="tasklist-parent-container">
       <div className="tasklist-container tasks-red">
         <div className="tasklist">
-          <div>
-            {tasks.red &&
-              tasks.red.map((task) => (
-                <div
-                  key={task.id}
-                  className={`task-item ${
-                    task.completed && 'task-item-active'
-                  }`}
-                  onClick={() =>
-                    handleCompleteTask(task.id, taskListColorsEnum.RED)
-                  }
-                >
-                  {task.name}
-                </div>
-              ))}
-          </div>
+          {tasks.red &&
+            tasks.red.map((task) => (
+              <div
+                key={task.id}
+                className={`task-item ${task.completed && 'task-item-active'}`}
+                onClick={() =>
+                  handleCompleteTask(task.id, taskListColorsEnum.RED)
+                }
+              >
+                {task.name}
+              </div>
+            ))}
         </div>
         <div>
           <TaskListFooter
@@ -85,22 +81,18 @@ function TasksLists({ tasks, setTasks }) {
 
       <div className="tasklist-container tasks-orange">
         <div className="tasklist">
-          <div>
-            {tasks.orange &&
-              tasks.orange.map((task) => (
-                <div
-                  key={task.id}
-                  className={`task-item ${
-                    task.completed && 'task-item-active'
-                  }`}
-                  onClick={() =>
-                    handleCompleteTask(task.id, taskListColorsEnum.ORANGE)
-                  }
-                >
-                  {task.name}
-                </div>
-              ))}
-          </div>
+          {tasks.orange &&
+            tasks.orange.map((task) => (
+              <div
+                key={task.id}
+                className={`task-item ${task.completed && 'task-item-active'}`}
+                onClick={() =>
+                  handleCompleteTask(task.id, taskListColorsEnum.ORANGE)
+                }
+              >
+                {task.name}
+              </div>
+            ))}
         </div>
         <div>
           <TaskListFooter
